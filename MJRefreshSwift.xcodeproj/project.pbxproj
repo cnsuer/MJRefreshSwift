@@ -17,6 +17,7 @@
 		18927B5C22279D0F00D11D18 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18927B5722279D0F00D11D18 /* UIView+Extension.swift */; };
 		18927B5D22279D0F00D11D18 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18927B5822279D0F00D11D18 /* Bundle+Extension.swift */; };
 		18927B5E22279D0F00D11D18 /* UIScrollView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18927B5922279D0F00D11D18 /* UIScrollView+Extension.swift */; };
+		18927B602227B65300D11D18 /* MJRefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18927B5F2227B65300D11D18 /* MJRefreshHeader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		18927B5722279D0F00D11D18 /* UIView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		18927B5822279D0F00D11D18 /* Bundle+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		18927B5922279D0F00D11D18 /* UIScrollView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extension.swift"; sourceTree = "<group>"; };
+		18927B5F2227B65300D11D18 /* MJRefreshHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MJRefreshHeader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 			isa = PBXGroup;
 			children = (
 				18927B5422279D0F00D11D18 /* MJRefreshComponent.swift */,
+				18927B5F2227B65300D11D18 /* MJRefreshHeader.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				18927B4222279CFA00D11D18 /* AppDelegate.swift in Sources */,
 				18927B5C22279D0F00D11D18 /* UIView+Extension.swift in Sources */,
 				18927B5A22279D0F00D11D18 /* MJRefreshComponent.swift in Sources */,
+				18927B602227B65300D11D18 /* MJRefreshHeader.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

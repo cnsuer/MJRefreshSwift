@@ -52,8 +52,6 @@ class MJRefreshComponent: UIView {
 	/** 刷新状态 一般交给子类内部实现 默认是普通闲置状态 */
 	var state: MJRefreshState = .idle {
 		didSet{
-			//状态未改变的话直接返回
-			if state == oldValue { return }
 			//状态改变
 			mj_setState(oldValue)
 		}
