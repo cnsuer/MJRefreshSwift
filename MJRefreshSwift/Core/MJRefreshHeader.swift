@@ -11,7 +11,11 @@ import UIKit
 class MJRefreshHeader: MJRefreshComponent {
 	
 	/** 这个key用来存储上一次下拉刷新成功的时间 */
-	var lastUpdatedTimeKey = MJRefreshHeaderLastUpdatedTimeKey
+	var lastUpdatedTimeKey = MJRefreshHeaderLastUpdatedTimeKey{
+		didSet{
+			self.setLastUpdatedTimeKey()
+		}
+	}
 	
 	/** 上一次下拉刷新成功的时间 */
 	var lastUpdatedTime: Date {
@@ -39,7 +43,9 @@ class MJRefreshHeader: MJRefreshComponent {
 	
 	override func prepare() {
 		super.prepare()
-		
+
+		// 设置key,调用didSet方法重新显示时间
+		self.lastUpdatedTimeKey = MJRefreshHeaderLastUpdatedTimeKey
 		// 设置高度
 		self.mj_h = MJRefreshHeaderHeight
 	}
@@ -151,4 +157,6 @@ class MJRefreshHeader: MJRefreshComponent {
 		}
 	}
 	
+	func setLastUpdatedTimeKey() {}
+
 }
