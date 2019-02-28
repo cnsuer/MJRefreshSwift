@@ -9,6 +9,28 @@
 import UIKit
 
 public extension UIScrollView {
+	private struct MJRefreshHeaderKeys {
+		static var MJRefreshHeaderKey: CGFloat = 1.0
+	}
+	
+	public var mj_header: MJRefreshHeader? {
+		get{
+			if let header = objc_getAssociatedObject(self, &MJRefreshHeaderKeys.MJRefreshHeaderKey) as? MJRefreshHeader {
+				return header
+			}
+			return nil
+		}
+		set{
+			if let newHeader = newValue, newValue != self.mj_header {
+				// 删除旧的，添加新的
+				self.mj_header?.removeFromSuperview()
+				self.insertSubview(newHeader, at: 0)
+				// 存储新的
+				objc_setAssociatedObject(self, &MJRefreshHeaderKeys.MJRefreshHeaderKey, newValue, .OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+			}
+		}
+	}
+	
 	
 	var mj_inset: UIEdgeInsets {
 		get {

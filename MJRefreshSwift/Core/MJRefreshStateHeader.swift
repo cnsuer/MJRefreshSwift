@@ -10,11 +10,11 @@ import UIKit
 
 class MJRefreshStateHeader: MJRefreshHeader {
 
-	private typealias lastUpdatedTimeCallBack = (_ lastUpdatedTime: Date) -> (String)
+	typealias lastUpdatedTimeCallBack = (_ lastUpdatedTime: Date) -> (String)
 	
 //MARK: 刷新时间相关
 	/** 利用这个block来决定显示的更新时间文字 */
-	private var lastUpdatedTimeText: lastUpdatedTimeCallBack?
+	var lastUpdatedTimeText: lastUpdatedTimeCallBack?
 	
 	/** 显示上一次刷新时间的label */
 	lazy var lastUpdatedTimeLabel: UILabel = {

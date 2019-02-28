@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MJRefreshHeader: MJRefreshComponent {
+public class MJRefreshHeader: MJRefreshComponent {
 	
 	/** 这个key用来存储上一次下拉刷新成功的时间 */
 	var lastUpdatedTimeKey = MJRefreshHeaderLastUpdatedTimeKey{

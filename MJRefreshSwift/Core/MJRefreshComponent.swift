@@ -23,7 +23,7 @@ enum MJRefreshState: Int {
 	
 }
 
-class MJRefreshComponent: UIView {
+public class MJRefreshComponent: UIView {
 	
 	public typealias MJRefreshCallBack = () -> ()
 	
@@ -97,7 +97,7 @@ class MJRefreshComponent: UIView {
 		super.layoutSubviews()
 	}
 	
-	override func willMove(toSuperview newSuperview: UIView?) {
+	override public func willMove(toSuperview newSuperview: UIView?) {
 		super.willMove(toSuperview: newSuperview)
 		
 		// 如果newSuperview不为空,且不是UIScrollView，不做任何事情
@@ -122,7 +122,7 @@ class MJRefreshComponent: UIView {
 		
 	}
 	
-	override func draw(_ rect: CGRect) {
+	override public func draw(_ rect: CGRect) {
 		super.draw(rect)
 		
 		if self.state == .willRefresh {

@@ -19,6 +19,8 @@
 		18927B5E22279D0F00D11D18 /* UIScrollView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18927B5922279D0F00D11D18 /* UIScrollView+Extension.swift */; };
 		18927B602227B65300D11D18 /* MJRefreshHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18927B5F2227B65300D11D18 /* MJRefreshHeader.swift */; };
 		18927B802227C99900D11D18 /* MJRefreshStateHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18927B7F2227C99900D11D18 /* MJRefreshStateHeader.swift */; };
+		18927B822227DD9B00D11D18 /* MJRefreshNormalHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18927B812227DD9B00D11D18 /* MJRefreshNormalHeader.swift */; };
+		18927B852227DFB100D11D18 /* MJRefresh.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 18927B842227DFB100D11D18 /* MJRefresh.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +38,8 @@
 		18927B5922279D0F00D11D18 /* UIScrollView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIScrollView+Extension.swift"; sourceTree = "<group>"; };
 		18927B5F2227B65300D11D18 /* MJRefreshHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MJRefreshHeader.swift; sourceTree = "<group>"; };
 		18927B7F2227C99900D11D18 /* MJRefreshStateHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MJRefreshStateHeader.swift; sourceTree = "<group>"; };
+		18927B812227DD9B00D11D18 /* MJRefreshNormalHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MJRefreshNormalHeader.swift; sourceTree = "<group>"; };
+		18927B842227DFB100D11D18 /* MJRefresh.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = MJRefresh.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 		18927B4022279CFA00D11D18 /* MJRefreshSwift */ = {
 			isa = PBXGroup;
 			children = (
+				18927B832227DFB100D11D18 /* Resources */,
 				18927B5322279D0F00D11D18 /* Core */,
 				18927B5522279D0F00D11D18 /* Extension */,
 				18927B4122279CFA00D11D18 /* AppDelegate.swift */,
@@ -86,6 +91,7 @@
 				18927B5422279D0F00D11D18 /* MJRefreshComponent.swift */,
 				18927B5F2227B65300D11D18 /* MJRefreshHeader.swift */,
 				18927B7F2227C99900D11D18 /* MJRefreshStateHeader.swift */,
+				18927B812227DD9B00D11D18 /* MJRefreshNormalHeader.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -99,6 +105,14 @@
 				18927B5922279D0F00D11D18 /* UIScrollView+Extension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		18927B832227DFB100D11D18 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				18927B842227DFB100D11D18 /* MJRefresh.bundle */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +175,7 @@
 			files = (
 				18927B4C22279CFB00D11D18 /* LaunchScreen.storyboard in Resources */,
 				18927B4922279CFB00D11D18 /* Assets.xcassets in Resources */,
+				18927B852227DFB100D11D18 /* MJRefresh.bundle in Resources */,
 				18927B4722279CFA00D11D18 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -174,6 +189,7 @@
 			files = (
 				18927B5E22279D0F00D11D18 /* UIScrollView+Extension.swift in Sources */,
 				18927B5B22279D0F00D11D18 /* MJRefreshConst.swift in Sources */,
+				18927B822227DD9B00D11D18 /* MJRefreshNormalHeader.swift in Sources */,
 				18927B5D22279D0F00D11D18 /* Bundle+Extension.swift in Sources */,
 				18927B4422279CFA00D11D18 /* ViewController.swift in Sources */,
 				18927B4222279CFA00D11D18 /* AppDelegate.swift in Sources */,

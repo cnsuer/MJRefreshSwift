@@ -21,7 +21,7 @@ extension Bundle {
 	}
 	
 	class func mj_localizedStringForKey(_ key: String, value:String? = nil) -> String {
-		// （iOS获取的语言字符串比较不稳定）目前框架只处理en、zh-Hans，其他按照系统默认处理
+		// 目前框架只处理en、zh-Hans，其他按照系统默认处理
 		guard let firstLanguage = Locale.preferredLanguages.first else { return "" }
 		var language: String = "en"
 		if firstLanguage.hasPrefix("en") {
