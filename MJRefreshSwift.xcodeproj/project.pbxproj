@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		184B1CD52228D909006354B8 /* MJRefreshFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184B1CD42228D909006354B8 /* MJRefreshFooter.swift */; };
 		18927B4222279CFA00D11D18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18927B4122279CFA00D11D18 /* AppDelegate.swift */; };
 		18927B4422279CFA00D11D18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18927B4322279CFA00D11D18 /* ViewController.swift */; };
 		18927B4722279CFA00D11D18 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18927B4522279CFA00D11D18 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		184B1CD42228D909006354B8 /* MJRefreshFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MJRefreshFooter.swift; sourceTree = "<group>"; };
 		18927B3E22279CFA00D11D18 /* MJRefreshSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MJRefreshSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18927B4122279CFA00D11D18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18927B4322279CFA00D11D18 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,6 +94,7 @@
 				18927B5F2227B65300D11D18 /* MJRefreshHeader.swift */,
 				18927B7F2227C99900D11D18 /* MJRefreshStateHeader.swift */,
 				18927B812227DD9B00D11D18 /* MJRefreshNormalHeader.swift */,
+				184B1CD42228D909006354B8 /* MJRefreshFooter.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -197,6 +200,7 @@
 				18927B5C22279D0F00D11D18 /* UIView+Extension.swift in Sources */,
 				18927B5A22279D0F00D11D18 /* MJRefreshComponent.swift in Sources */,
 				18927B602227B65300D11D18 /* MJRefreshHeader.swift in Sources */,
+				184B1CD52228D909006354B8 /* MJRefreshFooter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

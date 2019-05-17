@@ -9,10 +9,11 @@
 import UIKit
 
 public extension UIScrollView {
+	
 	private struct MJRefreshHeaderKeys {
 		static var MJRefreshHeaderKey: CGFloat = 1.0
 	}
-	
+		
 	public var mj_header: MJRefreshHeader? {
 		get{
 			if let header = objc_getAssociatedObject(self, &MJRefreshHeaderKeys.MJRefreshHeaderKey) as? MJRefreshHeader {
@@ -30,7 +31,9 @@ public extension UIScrollView {
 			}
 		}
 	}
-	
+}
+
+public extension UIScrollView {
 	
 	var mj_inset: UIEdgeInsets {
 		get {
